@@ -8,7 +8,6 @@ class BankAccount
     @name = name
     @balance = 1000
     @status = "open"
-    @@all << self
   end
 
   def deposit(deposit_amount)
