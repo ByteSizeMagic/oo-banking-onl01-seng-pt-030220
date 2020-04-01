@@ -1,9 +1,8 @@
 class BankAccount
 
-  @@all = []
-
   attr_reader :name
   attr_accessor :balance, :status
+  
 
   def initialize(name)
     @name = name
@@ -29,7 +28,8 @@ class BankAccount
   end
 
   def close_account
-
+    self.balance = 0
+    self.status = "closed"
   end
 
 end
